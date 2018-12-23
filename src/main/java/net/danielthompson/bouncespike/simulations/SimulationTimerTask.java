@@ -1,12 +1,12 @@
-package net.danielthompson.bouncespike;
+package net.danielthompson.bouncespike.simulations;
 
 import java.util.TimerTask;
 
 public class SimulationTimerTask extends TimerTask {
 
-   private Simulation _simulation;
+   private AbstractSimulation _simulation;
 
-   public SimulationTimerTask(Simulation simulation) {
+   public SimulationTimerTask(AbstractSimulation simulation) {
       _simulation = simulation;
    }
 

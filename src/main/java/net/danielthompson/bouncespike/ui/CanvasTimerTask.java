@@ -1,4 +1,4 @@
-package net.danielthompson.bouncespike;
+package net.danielthompson.bouncespike.ui;
 
 import java.awt.*;
 import java.util.TimerTask;

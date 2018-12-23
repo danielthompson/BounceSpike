@@ -1,4 +1,4 @@
-package net.danielthompson.bouncespike;
+package net.danielthompson.bouncespike.structures;
 
 public class Vector2 {
    public double x, y;
@@ -16,6 +16,11 @@ public class Vector2 {
       double length = length();
       x /= length;
       y /= length;
+   }
+
+   public void scale(double n) {
+      x *= n;
+      y *= n;
    }
 
    @Override

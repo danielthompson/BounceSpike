@@ -1,6 +1,6 @@
 package test;
 
-import net.danielthompson.bouncespike.Box;
+import net.danielthompson.bouncespike.shapes.Box;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

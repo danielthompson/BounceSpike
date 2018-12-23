@@ -1,4 +1,6 @@
-package net.danielthompson.bouncespike;
+package net.danielthompson.bouncespike.shapes;
+
+import net.danielthompson.bouncespike.structures.Point2;
 
 import java.awt.*;
 
@@ -14,8 +16,8 @@ public class Box {
       this.color = color;
    }
 
-   public Point getCenterOfMass() {
-      return new Point(x + .5 * w, y + .5 * h);
+   public Point2 getCenterOfMass() {
+      return new Point2(x + .5 * w, y + .5 * h);
    }
 
    public boolean intersects(Box other) {

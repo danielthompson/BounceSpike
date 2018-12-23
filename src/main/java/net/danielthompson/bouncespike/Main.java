@@ -1,5 +1,9 @@
 package net.danielthompson.bouncespike;
 
+import net.danielthompson.bouncespike.simulations.*;
+import net.danielthompson.bouncespike.ui.CanvasTimerTask;
+import net.danielthompson.bouncespike.ui.MainCanvas;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.Timer;
@@ -23,15 +27,15 @@ public class Main {
       frame.setSize(Width, Height);
       frame.setVisible(true);
 
-      Simulation simulation = new Simulation(state);
+      AbstractSimulation simulation = new Simulation1D(state);
 
       Timer timer = new Timer();
 
       SimulationTimerTask simulationTimerTask = new SimulationTimerTask(simulation);
       CanvasTimerTask canvasTimerTask = new CanvasTimerTask(canvas, canvas.getGraphics());
 
-      timer.schedule(simulationTimerTask, 1000, 20);
-      timer.schedule(canvasTimerTask, 1025, 20);
+      timer.schedule(simulationTimerTask, 500, 20);
+      timer.schedule(canvasTimerTask, 525, 20);
 
    }
 
